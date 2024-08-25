@@ -27,7 +27,7 @@ jobs:
           ${{ runner.os }}-maven-
     - run: java -version && mvn --version
     - run: mvn --activate-profiles dist --no-transfer-progress package
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: BungeeCord
         path: bootstrap/target/BungeeCord.jar
